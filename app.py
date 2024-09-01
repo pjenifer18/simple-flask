@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Configure the SQLAlchemy connection to your RDS database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://<username>:<password>@<rds-endpoint>/<dbname>'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://postgres:)E!MK~2dW$u}mg7lehVGbj6nn$7t@database-2.chge4i04izsn.ap-southeast-1.rds.amazonaws.com/<dbname>'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
