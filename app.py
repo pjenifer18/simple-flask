@@ -18,8 +18,9 @@ class User(db.Model):
     def __repr__(self):
         return f"<User {self.name}>"
 
-# Create the database tables
-db.create_all()
+# Ensure that the database tables are created within the application context
+with app.app_context():
+    db.create_all()
 
 @app.route('/')
 def index():
